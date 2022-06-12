@@ -1,0 +1,417 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mis tipografias */
+@font-face {
+    font-family:chinese-rocks-free-regular;
+    src: url(../fuentes/Chinese\ Rocks\ Free\ Regular.ttf);
+}
+p{
+    text-align: center;
+    font-family:'Nunito', sans-serif;
+    font-weight: regular;
+
+}
+
+/* Propiedades generales */
+body{
+    padding: 4rem 0 0 0;
+}
+   
+h1{
+    font-family:chinese-rocks-free-regular;
+    background-color: rgb(123, 59, 243);
+    color:black;
+    font-size: 2rem;
+    text-align: center;   
+    letter-spacing: 0.2rem;
+    padding: 1.5rem;
+}
+#TextoNosotrosIndex{
+    background-color: white;
+}
+h2{
+    font-family:'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.BotonHome{
+    font-family:'Nunito', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 1rem;
+}
+/* Propiedades del menú*/
+.LogoMenuDesplegable{
+display: flex;
+margin-top: 0rem;
+align-items: center;
+justify-content: space-between;
+}
+#LogoMenu{
+    display:flex;
+    background: none;
+    margin-left: 1rem ;
+    margin: 0.4rem 1rem;
+}
+.toggle{
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 2rem;
+    margin-right: 1rem;
+    
+}
+.DivisionesMenu{
+    display: none;
+}
+#IconoMenu{
+    display: none;
+}
+
+#IconoMenu:checked .DivisionesMenu{
+    display: block;
+
+   
+}
+.menu{
+    text-align: center;
+    width: 100vw;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+.menu ul {
+	list-style:none;
+	margin:0;
+}
+
+.menu ul a {
+	color:white;
+	text-decoration:none;
+	font-weight:400;
+	font-size:15px;
+	padding:20px;
+	font-family:'Nunito', sans-serif;
+    letter-spacing:1px;
+}
+
+.menu ul li {
+	margin:0;
+	padding:0;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.menu ul li:hover {
+	background:rgb(123, 59, 243);
+}
+
+.menu ul li:hover > ul {
+	display:flex;
+    flex-direction: column;
+}
+
+#buscar{
+    background: none;
+    justify-items: center ;
+    justify-content: center;
+}
+
+/* Propiedades index */
+.MainIndex{
+    display: grid;
+    grid-template-areas:"IndexPrincipal"
+                        "TextoNosotrosIndex"
+                        "DescripcionNosotrosIndex";
+    justify-items: center;
+}
+.IndexPrincipal{
+    grid-area: IndexPrincipal;
+    justify-self: center;
+}
+#TextoNosotrosIndex{
+    grid-area: TextoNosotrosIndex;
+    background-color: white;
+}
+.DescripcionNosotrosIndex{
+    grid-area: DescripcionNosotrosIndex;
+    background-color: none;
+    text-align: left;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+/* Propiedad novedades */
+.MainNovedades{
+    display: grid;
+    grid-template-areas:"NovedadesPrincipal"
+                        "ParrafoNovedades"
+                        "Novedades1"
+                        "Novedades2" 
+                        "Novedades3";
+    justify-content: center;
+    row-gap: 1rem;
+}
+.NovedadesPrincipal{
+    grid-area: NovedadesPrincipal;
+}
+.ParrafoNovedades{
+    grid-area: ParrafoNovedades;
+    text-align: center;
+    font-family:'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem ;
+    margin: 2rem;
+
+}
+.Novedades1{
+    grid-area: Novedades1;
+    align-self: center;
+    justify-self: center;
+}
+.Novedades2{
+    grid-area: Novedades2;
+    align-self: center;
+    justify-self: center;
+}
+.Novedades3{
+    grid-area: Novedades3;
+    align-self: center;
+    justify-self: center;
+}
+
+.Novedades1 img{
+    border-radius:0.5rem ;
+}
+.Novedades2 img{
+    border-radius:0.5rem ;
+}
+.Novedades3 img{
+    border-radius:0.5rem ;
+}
+/* Propiedades Tienda */
+.MainTienda{
+    display: grid;
+    grid-template-areas: "Tienda1"
+                         "Tienda2"
+                         "Tienda3"
+                         "Tienda4"
+                         "Tienda5"
+                         "Tienda6";
+    justify-content: center;
+    row-gap: 1rem;
+}
+/* Propiedades servicios */
+.MainServicios{
+    display: grid;
+    grid-template-areas:"Servicios1"
+                        "Servicios2"
+                        "Servicios3";
+    justify-items: center;
+}
+.Servicios1{
+    grid-area: Servicios1;
+    justify-self: center;
+}
+
+.Servicios2{
+    grid-area: Servicios2;
+    justify-self: center;
+    
+}
+.Servicios3{
+    grid-area: Servicios3;
+    justify-self: center;
+    
+}
+
+/* Propiedades contáctanos */
+.FormularioContactanos{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 1rem;
+}
+
+/* Propiedades productos */
+
+.Parches{
+    background-color: blueviolet;
+    width: 50px;
+    height: 50px;
+}
+/* botón flotante */
+.BotonFlotante{
+    margin-left: 2rem;
+}
+
+/* Propiedades del footer */
+.Footer{
+    margin: 2rem;
+}
+h6{
+    color:black;
+    font-family:'Nunito', sans-serif;
+    font-weight: 1rem;
+    text-align: center;   
+}
+
+/* ------------------------Media Queries---------------------- */
+    /* Desk */
+    @media screen and (min-width:1024px) {
+
+    #ContenidoGeneral{
+        margin: 0 15rem;
+    }    
+
+    /* Propiedades del menú*/
+    #LogoMenu{
+        display:inline-block;
+        background: none;
+        margin: 0.7rem ;
+    }
+    .toggle{
+        display: none;
+    }
+    .DivisionesMenu{
+        display: block;
+    }
+
+    .menu{
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        background-color: black;
+        padding: 0px;
+        justify-content:center;
+        position: fixed;
+        top: 0;
+    }
+    .menu ul li {
+        display:inline-block;
+        position:relative;
+        margin: 0;
+        padding:0;
+        background-color: rgb(0, 0, 0);
+        height: 20px;
+        top:0rem;
+    }
+
+    .menu ul ul {
+        display:none;
+        position:absolute;
+        top:25px;
+    }
+
+    .menu ul ul {
+        display:none;
+        top:20px;
+    }
+    .menu ul li:hover > ul {
+        flex-direction: column;
+    }
+
+    /* Propiedades index */
+    .MainIndex{
+        display: grid;
+        grid-template-areas:"IndexPrincipal IndexPrincipal"
+                            "TextoNosotrosIndex DescripcionNosotrosIndex";
+    }
+    .IndexPrincipal{
+        grid-area: IndexPrincipal;
+    }
+    #TextoNosotrosIndex{
+        grid-area: TextoNosotrosIndex;
+        
+    }
+    .DescripcionNosotrosIndex{
+        grid-area: DescripcionNosotrosIndex;
+        background-color: none;
+        text-justify: left;
+    
+    }
+    
+    
+    /* Propiedades novedades */
+    .MainNovedades{
+    display: grid;
+    grid-template-areas:"NovedadesPrincipal NovedadesPrincipal NovedadesPrincipal"
+                        "ParrafoNovedades ParrafoNovedades ParrafoNovedades"
+                        "Novedades1 Novedades2 Novedades3";
+    justify-content: center;
+}
+    /* Propiedades tienda */
+    .MainTienda{
+    grid-template-areas:"Tienda1 Tienda2 Tienda3"
+                        "Tienda4 Tienda5 Tienda6";
+    justify-content: center;
+    margin: 1rem 1rem;
+    }
+    .Tienda1{
+        grid-area: Tienda1;
+        align-self: center;
+        justify-self: center;
+    }
+    .Tienda2{
+        grid-area: Tienda2;
+        align-self: center;
+        justify-self: center;
+    }
+    .Tienda3{
+        grid-area: Tienda3;
+        align-self: center;
+        justify-self: center;
+    }
+    .Tienda4{
+        grid-area: Tienda4;
+        align-self: center;
+        justify-self: center;
+    }
+    .Tienda5{
+        grid-area: Tienda5;
+        align-self: center;
+        justify-self: center;
+    }
+    .Tienda6{
+        grid-area: Tienda6;
+        align-self: center;
+        justify-self: center;
+    }
+    /* Propiedades servicios */
+    .MainServicios{
+        display: grid;
+        grid-template-areas:"Servicios1 Servicios2 Servicios3";
+        margin-top: 1rem;
+    }
+    /* Propiedades Contáctanos */
+    .FormularioContactanos{
+        display: grid;
+        flex-direction: column;
+        justify-items: right;
+        margin-top: 1rem;
+     }
+    /* Boton Flotante */
+
+}
+
+
+
+/* Tablets */
+@media screen and (min-width:768px) {
+
+#ContenidoGeneral{
+    margin: 0 4rem;
+}    
+
+.LogoMenuDesplegable {
+    justify-content: space-around;
+}
+}

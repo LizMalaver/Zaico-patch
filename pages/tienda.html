@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+
+<!-- link de tipografia -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- link recursos graficos -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<!-- link de mi css -->
+<link rel="stylesheet" href="../CSS/styles.css">
+
+</head>
+<body>
+    <!--Barra navegación-->
+    <header>
+        <nav class="menu">
+            <div class="LogoMenuDesplegable">
+                <a href="../index.html" id="LogoMenu">
+                    <img src="../imgs/logo-zaicopatch-b.png" alt="home">
+                </a> 
+                <label for="IconoMenu" class="toggle" >
+                    <i class='bx bx-menu'></i>
+                </label>
+                <input type="checkbox" id="IconoMenu">
+            
+            <div class="DivisionesMenu">
+                <ul>
+                    <li>
+                        <a href="../pages/Novedades.html">
+                            Novedades
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/tienda.html">
+                            Tienda
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="../pages/parches.html">
+                                        Parches
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../pages/gorras.html">
+                                        Gorras
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../pages/servicios.html">
+                            Servicios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/contactenos.html">
+                        Contáctanos
+                        </a>
+                    </li> 
+                    <li id="buscar">
+                        <label for="buscar"></label >
+                        <input type="text" class="buscar-texto" id="" placeholder="Buscar">
+                    </li>    
+                </ul> 
+            </div>        
+        </nav> 
+    </header>
+
+    <h1>TIENDA</h1>
+
+    <div id="ContenidoGeneral"> 
+    <main class="MainTienda">
+        <!--Productos tienda-->
+        <div class="Tienda1">
+            <img src="../imgs/img-prueba.jpg" alt="Foto1">
+        </div>
+        <div class="Tienda2">
+            <img src="../imgs/img-prueba.jpg" alt="Foto2">
+        </div>
+        <div class="Tienda3">
+            <img src="../imgs/img-prueba.jpg" alt="Foto3">
+        </div>
+        <div class="Tienda4">
+            <img src="../imgs/img-prueba.jpg" alt="Foto4">
+        </div>
+        <div class="Tienda5">
+            <img src="../imgs/img-prueba.jpg" alt="Foto5">
+        </div>
+        <div class="Tienda6">
+            <img src="../imgs/img-prueba.jpg" alt="Foto6">
+        </div>
+    </main>
+    
+<!--Botón flotante-->
+<a href="#" class="BotonFlotante">
+    <img src="../imgs/boton-home.png" alt="#">
+</a>
+
+<!--Botón home-->
+<div class="BotonHome">
+    <a href="../index.html">
+        Ir a home
+    </a>
+</div>
+     
+
+<!--Footer-->
+    <footer class="Footer">
+        <h6>Todos los derechos reservados, Página realizada por
+            <a href="https://www.behance.net/lizkmalavee2ec" target="_blank">
+           Liz Malaver   
+            </a>
+        </h6>
+    </footer>
+</div>
+</body>
+</html>
