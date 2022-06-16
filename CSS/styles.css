@@ -232,13 +232,14 @@ justify-content: space-between;
     
 }
 
-/* Propiedades contáctanos */
+/* Propiedades contáctanos 
 .FormularioContactanos{
    display: flex;
    flex-direction: column;
    align-items: center;
    margin-top: 1rem;
 }
+*/
 
 /* Propiedades productos */
 
@@ -251,6 +252,10 @@ justify-content: space-between;
 .BotonFlotante{
     margin-left: 2rem;
 }
+ /* Propiedades contactenos */
+ .background-form{
+     color: black;
+ }
 
 /* Propiedades del footer */
 .Footer{
