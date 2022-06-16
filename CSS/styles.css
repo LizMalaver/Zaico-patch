@@ -18,9 +18,7 @@ p{
 }
 
 /* Propiedades generales */
-body{
-    padding: 4rem 0 0 0;
-}
+
    
 h1{
     font-family:chinese-rocks-free-regular;
@@ -45,7 +43,7 @@ h2{
     text-decoration: none;
     margin: 1rem;
 }
-/* Propiedades del menú*/
+/* Propiedades del menú
 .LogoMenuDesplegable{
 display: flex;
 margin-top: 0rem;
@@ -124,6 +122,7 @@ justify-content: space-between;
     justify-items: center ;
     justify-content: center;
 }
+*/
 
 /* Propiedades index */
 .MainIndex{
