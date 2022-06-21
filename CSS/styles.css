@@ -37,6 +37,16 @@ h2{
     font-weight: bold;
     font-size: 1.2rem;
 }
+h3{
+    font-family:'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+h4{
+    font-family:'Nunito', sans-serif;
+    font-weight: lighter;
+    font-size:1.2rem;
+}
 .BotonHome{
     font-family:'Nunito', sans-serif;
     font-weight: 700;
@@ -147,7 +157,9 @@ justify-content: space-between;
     margin-right: 2rem;
     margin-left: 2rem;
 }
-
+.navbar-{
+    background-color: black;
+}
 /* Propiedad novedades */
 .MainNovedades{
     display: grid;
@@ -208,6 +220,36 @@ justify-content: space-between;
     justify-content: center;
     row-gap: 1rem;
 }
+
+/* Propiedades Parches */
+.ModelosParches{
+    display: grid;
+    justify-items: center;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    Text-align: center;
+}
+
+.ImgsParches:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+/* Propiedades Gorras */
+.ModelosGorras{
+    display: grid;
+    justify-items: center;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    Text-align: center;
+}
+
+.ImgsGorras:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+
 /* Propiedades servicios */
 .MainServicios{
     display: grid;
@@ -241,13 +283,10 @@ justify-content: space-between;
 }
 */
 
-/* Propiedades productos */
-
-.Parches{
-    background-color: blueviolet;
-    width: 50px;
-    height: 50px;
+.background-form{
+    margin-bottom: 2rem;
 }
+
 /* botón flotante */
 .BotonFlotante{
     margin-left: 2rem;
@@ -354,10 +393,15 @@ h6{
 }
     /* Propiedades tienda */
     .MainTienda{
+    display: grid;
     grid-template-areas:"Tienda1 Tienda2 Tienda3"
                         "Tienda4 Tienda5 Tienda6";
     justify-content: center;
-    margin: 1rem 1rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
     }
     .Tienda1{
         grid-area: Tienda1;
@@ -389,12 +433,22 @@ h6{
         align-self: center;
         justify-self: center;
     }
+
+    /* Propiedades Parches */
+    .ModelosParches{
+    grid-template-areas: "Parche1 Parche2 Parche3"
+                         "Parche4 Parche5 Parche6";
+    
     /* Propiedades servicios */
-    .MainServicios{
+    }
+
+    .MainServicios {
         display: grid;
         grid-template-areas:"Servicios1 Servicios2 Servicios3";
         margin-top: 1rem;
     }
+        
+        
     /* Propiedades Contáctanos */
     .FormularioContactanos{
         display: grid;
@@ -403,10 +457,7 @@ h6{
         margin-top: 1rem;
      }
     /* Boton Flotante */
-
-}
-
-
+    }
 
 /* Tablets */
 @media screen and (min-width:768px) {
@@ -417,5 +468,18 @@ h6{
 
 .LogoMenuDesplegable {
     justify-content: space-around;
+}
+/* Propiedades Parches */
+.ModelosParches{
+    grid-template-areas: "Parche1 Parche2"
+                         "Parche3 Parche4"
+                         "Parche5 Parche6";
+   gap:2rem;
+}
+.ModelosGorras{
+    grid-template-areas: "Gorra1 Gorra2"
+                         "Gorra3 Gorra4"
+                         "Gorra5 Gorra6";
+   gap:2rem;
 }
 }
