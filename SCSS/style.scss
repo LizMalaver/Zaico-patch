@@ -1,0 +1,52 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import"utilities/variables";
+
+@font-face {
+    font-family:chinese-rocks-free-regular;
+    src: url(fuentes/Chinese/Rocks/Free/Regular.ttf);
+}
+
+main{
+    display: grid;
+    grid-template-areas:"IndexPrincipal" "TextoNosotrosIndex" "DescripcionNosotrosIndex";
+    justify-items: center;
+    background-color: none;
+    width: vw ;
+    align-items: center;
+    section{
+        grid-area: IndexPrincipal;
+        justify-self: center;
+        img{
+            width: vw ;
+            align-items: center;
+        }
+    div {
+    #TextoNosotrosIndex{
+            grid-area: TextoNosotrosIndex;
+            h1{
+                font-family:chinese-rocks-free-regular;
+                color: red;
+                font-size: 2rem;
+                text-align: center;
+                letter-spacing: 0.2rem;
+                padding: 1rem;
+            }
+        }
+    div .DescripcionNosotrosIndex{
+        p{
+            text-align: center;
+            font-family:'Nunito', sans-serif;
+            font-weight: regular;
+        }
+    }   
+        
+    }
+    
+    }
+}
+
