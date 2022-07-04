@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1","build-css": "node-sass --include-path scss scss/style.scss css/styles.css","watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -15,9 +15,5 @@
   "bugs": {
     "url": "https://github.com/LizMalaver/Zaico-patch/issues"
   },
-  "homepage": "https://github.com/LizMalaver/Zaico-patch#readme",
-  "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.16"
-  }
+  "homepage": "https://github.com/LizMalaver/Zaico-patch#readme"
 }
