@@ -10,33 +10,63 @@
     font-family: chinese-rocks-free-regular;
     src: url(../fuentes/ChineseRocksFreeRegular.ttf);}
 
-/* Import*/
+// Import//
 @import "Utilities/variables";
 @import "Utilities/mixin";
 @import "Utilities/extend";
 @import "Utilities/mapas";
 
-/* Beanies*/
- 
-.ModelosBeanies{
-        @extend %Contenedor-imagenes;
 
-    .beanie1 img{
-        @extend %imagenes-galerias;
+/* Parches*/
+.ContenedorGaleria{
+    @extend %DisplayFlex;
+    width: 100% ;
+    min-height: 100vh ;
+    .ContenedorImagenes{
+        @extend %DisplayFlex;
+        text-align: center;
+        .card{
+            flex: 1;
+            margin: 20px 20px;
+            img{
+                @include ImagenGaleria (100%, auto)
+            }
+            h2{
+                @extend %Texto;
+                color: $ColorSecundario;
+                margin: 1rem;
+            }
+            h3{
+                @extend %Texto;
+                color: $ColorTerciario;
+            }
         }
     }
-    .beanie2 {
-        @extend %imagenes-galerias;
-    }
-    .beanie3 {
-        @extend %imagenes-galerias;
-    }
-    .beanie4 {
-        @extend %imagenes-galerias;
-    }
-    .beanie5 {
-        @extend %imagenes-galerias;
-    }
-    .beanie6 {
-        @extend %imagenes-galerias;
-    }
+}   
+
+/* Beanies*/
+.ContenedorGaleria{
+        @extend %DisplayFlex;
+        width: 100% ;
+        min-height: 100vh ;
+        .ContenedorImagenes{
+            @extend %DisplayFlex;
+            text-align: center;
+            .card{
+                flex: 1;
+                margin: 20px 20px;
+                img{
+                    @include ImagenGaleria (100%, auto)
+                }
+                h2{
+                    @extend %Texto;
+                    color: $ColorSecundario;
+                    margin: 1rem;
+                }
+                h3{
+                    @extend %Texto;
+                    color: $ColorTerciario;
+                }
+            }
+        }
+}   

@@ -1,4 +1,18 @@
 
+@mixin ImagenGaleria ($width,$height) {
+    width: $width;
+    height: $height;
+    border-radius: 1rem;
+}
+
+@mixin Texto {
+    text-align: center;
+    font-family:'Nunito', sans-serif;
+    font-weight: regular;
+    margin: 1rem;
+    
+}
+
 @mixin Parrafo {
     text-align: center;
     font-family:'Nunito', sans-serif;

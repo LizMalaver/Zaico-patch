@@ -1,19 +1,10 @@
-%imagenes-galerias{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    border-radius: 1rem;
-};
+%DisplayFlex{
+    display: flex ;
+    justify-content: center ;
+    align-items: center ;
+} 
 
-%Contenedor-imagenes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-    border-radius: 1rem;
-}; 
-
-%imagenes-galerias{
-    width: 3rem;
-    height: 3rem;
+%Texto{
+    text-align: center;
+    font-family:'Nunito', sans-serif;
 }
