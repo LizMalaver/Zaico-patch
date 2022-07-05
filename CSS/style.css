@@ -1,5 +1,28 @@
-p {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/*Fuente*/
+@font-face {
+  font-family: chinese-rocks-free-regular;
+  src: url(../fuentes/ChineseRocksFreeRegular.ttf);
+}
+/* Import*/
+.ModelosBeanies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  border-radius: 1rem;
+}
+
+.beanie6, .beanie5, .beanie4, .beanie3, .beanie2, .ModelosBeanies .beanie1 img {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Beanies*/
 
 /*# sourceMappingURL=style.css.map */

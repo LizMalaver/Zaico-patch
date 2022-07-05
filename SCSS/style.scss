@@ -1,3 +1,42 @@
-p{
-    color:red
+// reset //
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/*Fuente*/
+@font-face {
+    font-family: chinese-rocks-free-regular;
+    src: url(../fuentes/ChineseRocksFreeRegular.ttf);}
+
+/* Import*/
+@import "Utilities/variables";
+@import "Utilities/mixin";
+@import "Utilities/extend";
+@import "Utilities/mapas";
+
+/* Beanies*/
+ 
+.ModelosBeanies{
+        @extend %Contenedor-imagenes;
+
+    .beanie1 img{
+        @extend %imagenes-galerias;
+        }
+    }
+    .beanie2 {
+        @extend %imagenes-galerias;
+    }
+    .beanie3 {
+        @extend %imagenes-galerias;
+    }
+    .beanie4 {
+        @extend %imagenes-galerias;
+    }
+    .beanie5 {
+        @extend %imagenes-galerias;
+    }
+    .beanie6 {
+        @extend %imagenes-galerias;
+    }
