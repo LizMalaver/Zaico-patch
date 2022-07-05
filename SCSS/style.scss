@@ -1,3 +1,22 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
+
+/*Fuentes*/
+@font-face {
+font-family: chinese-rocks-free-regular;
+src: url(../fuentes/ChineseRocksFreeRegular.ttf); }
+
+//Import//
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/extend";
+@import "utilities/mapas";
+
+
 p{
     color:red
-}
+};
