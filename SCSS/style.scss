@@ -16,6 +16,33 @@
 @import "Utilities/extend";
 @import "Utilities/mapas";
 
+/*Index*/
+
+p{
+    color: aqua
+}
+
+/* Beanies*/
+.ContenedorGaleria{
+    @extend %DisplayFlex;
+    width: 100% ;
+    min-height: 100vh ;
+    div{
+        img{
+            @include ImagenGaleria (100%, auto)
+        }
+        h2{
+            @extend %Texto;
+            color: $ColorSecundario;
+            margin: 1rem;
+        }
+        h3{
+            @extend %Texto;
+            color: $ColorTerciario;
+        }
+    }
+          
+        }
 
 /* Parches*/
 .ContenedorGaleria{
@@ -44,29 +71,3 @@
     }
 }   
 
-/* Beanies*/
-.ContenedorGaleria{
-        @extend %DisplayFlex;
-        width: 100% ;
-        min-height: 100vh ;
-        .ContenedorImagenes{
-            @extend %DisplayFlex;
-            text-align: center;
-            .card{
-                flex: 1;
-                margin: 20px 20px;
-                img{
-                    @include ImagenGaleria (100%, auto)
-                }
-                h2{
-                    @extend %Texto;
-                    color: $ColorSecundario;
-                    margin: 1rem;
-                }
-                h3{
-                    @extend %Texto;
-                    color: $ColorTerciario;
-                }
-            }
-        }
-}   

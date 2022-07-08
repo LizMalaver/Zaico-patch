@@ -5,6 +5,13 @@
     border-radius: 1rem;
 }
 
+@mixin h1 {
+    text-align: center;
+    font-family: {
+        src: url(../fuentes/ChineseRocksFreeRegular.ttf);
+    };
+    font-weight: regular;    
+}
 @mixin Texto {
     text-align: center;
     font-family:'Nunito', sans-serif;
