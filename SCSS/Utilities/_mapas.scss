@@ -1,0 +1,12 @@
+// Breakpoints-Media queries//
+$breakpoints:(
+sm 576px
+md 768px
+lg 992px
+);
+
+@mixin Media ($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+    @content
+  }
+}

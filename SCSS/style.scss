@@ -16,11 +16,15 @@
 @import "Utilities/extend";
 @import "Utilities/mapas";
 
-/*Index*/
 
-p{
-    color: red
+/*General*/
+body{
+    background-image: url(../imgs/fondofondo.jpg)
+    
 }
+
+/*Index*/
+.MainIndex
 
 /* Beanies*/
 .ContenedorGaleria{

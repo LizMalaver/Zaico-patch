@@ -8,36 +8,31 @@
   font-family: chinese-rocks-free-regular;
   src: url(../fuentes/ChineseRocksFreeRegular.ttf); }
 
-.ContenedorGaleria, .ContenedorGaleria .ContenedorImagenes {
+.MainIndex .ContenedorGaleria, .ContenedorGaleria, .ContenedorGaleria .ContenedorImagenes {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.ContenedorGaleria divb h2, .ContenedorGaleria div h3, .ContenedorGaleria .ContenedorImagenes .card h2, .ContenedorGaleria .ContenedorImagenes .card h3 {
+.MainIndex .ContenedorGaleria div h2, .MainIndex .ContenedorGaleria div h3, .ContenedorGaleria .ContenedorImagenes .card h2, .ContenedorGaleria .ContenedorImagenes .card h3 {
   text-align: center;
   font-family: 'Nunito', sans-serif; }
 
-/*Index*/
-p {
-  color: aqua; 
-@font-face {
-  font-family: chinese-rocks-free-regular;
-  src: url(../fuentes/ChineseRocksFreeRegular.ttf);
-}
-}
+/*General*/
+body {
+  background-image: url(../imgs/fondofondo.jpg); }
 
-/* Beanies*/
-.ContenedorGaleria {
+/*Index*/
+.MainIndex .ContenedorGaleria {
   width: 100%;
   min-height: 100vh; }
-  .ContenedorGaleria div img {
+  .MainIndex .ContenedorGaleria div img {
     width: 100%;
     height: auto;
     border-radius: 1rem; }
-  .ContenedorGaleria div h2 {
+  .MainIndex .ContenedorGaleria div h2 {
     color: #ffffff;
     margin: 1rem; }
-  .ContenedorGaleria div h3 {
+  .MainIndex .ContenedorGaleria div h3 {
     color: #7b3bf3; }
 
 /* Parches*/
