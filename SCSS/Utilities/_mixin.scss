@@ -4,6 +4,7 @@
     height: $height;
     border-radius: 1rem;
 }
+//  Texto//
 
 @mixin h1 {
     text-align: center;
@@ -11,23 +12,18 @@
         src: url(../fuentes/ChineseRocksFreeRegular.ttf);
     };
     font-weight: regular;    
+    color: $ColorSecundario;
 }
-@mixin Texto {
+
+@mixin Texto ($rem){
     text-align: center;
     font-family:'Nunito', sans-serif;
     font-weight: regular;
-    margin: 1rem;
+    margin: ($rem);
     
 }
 
-@mixin Parrafo {
-    text-align: center;
-    font-family:'Nunito', sans-serif;
-    font-weight: regular;
-    margin: 1rem, 4rem, 1rem, 4rem;
-};
-
-@mixin Grid ($columnas,$espacio){
+@mixin Grid ($columns,$espacio){
     display: grid;
     grid-template-columns: repeat($columns,1fr);
 }

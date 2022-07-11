@@ -23,8 +23,46 @@ body{
     
 }
 
+
 /*Index*/
-.MainIndex
+
+.MainIndex{
+    @include Grid (2,1fr);
+    
+        .PortadaIndex{
+            grid-column: 1/3{
+            }
+            img {width: 100%;}
+        }
+        .TextoNosotrosIndex{
+            grid-column: 1/3;}
+        }
+        .DescripcionNosotrosIndex{
+            grid-column: 1/3;
+        }
+
+
+ @include Media (md){
+ .MainIndex{
+    @include Grid (2,1fr);
+    .PortadaIndex{
+        grid-column: 1/3{
+        }
+        img {width: 100%;}
+    }
+    .TextoNosotrosIndex{
+        grid-column: 1/2
+    }
+    .DescripcionNosotrosIndex{
+        grid-column: 2/3
+    }
+    
+ }
+  
+}
+
+
+
 
 /* Beanies*/
 .ContenedorGaleria{
@@ -74,4 +112,3 @@ body{
         }
     }
 }   
-
