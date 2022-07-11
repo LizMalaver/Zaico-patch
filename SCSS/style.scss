@@ -20,12 +20,31 @@
 /*General*/
 body{
     background-image: url(../imgs/fondofondo.jpg)
-    
 }
 
+p{
+    @include Texto (2.5rem 4rem);
+    color: $ColorSecundario 
+}
+h1{
+    @include Texto (2rem 4rem 2rem 4rem);
+    color: $ColorTerciario;
+    font-size: 3rem ;
+    font-weight: bolder
+}
+h4{
+    color: $ColorSecundario;
+    font-size: 0.5rem;
+    font-weight: 100
+}
+
+.BotonHome{
+    color: $ColorSecundario;
+    font-size: 1rem;
+    font-weight: 100
+}
 
 /*Index*/
-
 .MainIndex{
     @include Grid (2,1fr);
     
@@ -35,12 +54,18 @@ body{
             img {width: 100%;}
         }
         .TextoNosotrosIndex{
-            grid-column: 1/3;}
+            grid-column: 1/3;
+            h1{
+            @include Texto (3rem 4rem 0rem 4rem);
+            color: $ColorSecundario ;
+            font-size: 3rem ;
+            font-weight: bolder
+            }
+        }
         }
         .DescripcionNosotrosIndex{
             grid-column: 1/3;
-        }
-
+}
 
  @include Media (md){
  .MainIndex{
@@ -62,9 +87,7 @@ body{
 }
 
 /*Novedades*/
-.ContenedorNovedades{
-    @extend Flex
-}
+
 
 /* Beanies*/
 .ContenedorGaleria{
@@ -114,3 +137,15 @@ body{
         }
     }
 }   
+
+/* Servicios*/
+.MainServicios{
+    display: flex;
+    .Card{
+        background-color: aqua;
+        border: 3px solid $ColorSecundario;
+        img{
+            width:30%;
+        }
+    }
+}

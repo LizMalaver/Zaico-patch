@@ -13,7 +13,9 @@
 }
 
 
-%Cards{
-    width: 10px;
-    height: 100%;
+%Card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100px;
+    
 }
