@@ -1,5 +1,7 @@
 %DisplayFlex{
     display: flex ;
+    height: auto;
+    width: 100%;
     justify-content: center ;
     align-items: center ;
 } 
@@ -11,3 +13,7 @@
 }
 
 
+%Cards{
+    width: 10px;
+    height: 100%;
+}

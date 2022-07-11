@@ -61,8 +61,10 @@ body{
   
 }
 
-
-
+/*Novedades*/
+.ContenedorNovedades{
+    @extend Flex
+}
 
 /* Beanies*/
 .ContenedorGaleria{
