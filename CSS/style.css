@@ -10,6 +10,8 @@
 
 .ContenedorGaleria, .ContenedorGaleria .ContenedorImagenes {
   display: flex;
+  height: auto;
+  width: 100%;
   justify-content: center;
   align-items: center; }
 
@@ -24,22 +26,21 @@ body {
 /*Index*/
 .MainIndex {
   display: grid;
-  grid-template-columns: repeat 2, 1fr; }
+  grid-template-columns: repeat(2, 1fr); }
   .MainIndex .PortadaIndex {
     grid-column: 1/3; }
     .MainIndex .PortadaIndex img {
       width: 100%; }
   .MainIndex .TextoNosotrosIndex {
-    grid-column: 1/3;
-    padding: 2rem; }
-  .MainIndex .DescripcionNosotrosIndex {
-    grid-column: 1/3;
-    padding: 2rem; }
+    grid-column: 1/3; }
+
+.DescripcionNosotrosIndex {
+  grid-column: 1/3; }
 
 @media screen and (min-width: 768px) {
   .MainIndex {
     display: grid;
-    grid-template-columns: repeat 2, 1fr; }
+    grid-template-columns: repeat(2, 1fr); }
     .MainIndex .PortadaIndex {
       grid-column: 1/3; }
       .MainIndex .PortadaIndex img {
@@ -49,6 +50,7 @@ body {
     .MainIndex .DescripcionNosotrosIndex {
       grid-column: 2/3; } }
 
+/*Novedades*/
 /* Beanies*/
 .ContenedorGaleria {
   width: 100%;
