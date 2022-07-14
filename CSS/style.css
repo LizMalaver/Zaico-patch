@@ -81,6 +81,11 @@ h4 {
         width: 100%; }
     .MainIndex .TextoNosotrosIndex {
       grid-column: 1/2; }
+      .MainIndex .TextoNosotrosIndex h1 {
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        font-weight: regular;
+        margin: 3rem 4rem 0rem 4rem; }
     .MainIndex .DescripcionNosotrosIndex {
       grid-column: 2/3; } }
 
