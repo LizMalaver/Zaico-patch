@@ -21,6 +21,7 @@
 body{
     background-image: url(../imgs/fondofondo.jpg)
 }
+<<<<<<< HEAD
 
 p{
     @include Texto (2.5rem 4rem);
@@ -42,6 +43,15 @@ h4{
     color: $ColorSecundario;
     font-size: 1rem;
     font-weight: 100
+=======
+h1{
+    @include h1 (bolder)
+    margin: 2rem
+}
+p{
+    @include Texto (1rem 3rem)
+    color: $ColorSecundario
+>>>>>>> back
 }
 
 /*Index*/
@@ -54,6 +64,7 @@ h4{
             img {width: 100%;}
         }
         .TextoNosotrosIndex{
+<<<<<<< HEAD
             grid-column: 1/3;
             h1{
             @include Texto (3rem 4rem 0rem 4rem);
@@ -62,6 +73,13 @@ h4{
             font-weight: bolder
             }
         }
+=======
+            grid-column: 1/3;}
+            h1{
+                @include h1 (bolder)
+                margin: 2rem
+            }
+>>>>>>> back
         }
         .DescripcionNosotrosIndex{
             grid-column: 1/3;
@@ -82,7 +100,11 @@ h4{
         }
     }
     .DescripcionNosotrosIndex{
-        grid-column: 2/3
+        grid-column: 2/3;
+        p{
+            @include Texto (2rem 3rem)
+            color: $ColorSecundario
+        }
     }
     
  }
@@ -141,6 +163,7 @@ h4{
     }
 }   
 
+<<<<<<< HEAD
 /* Servicios*/
 .MainServicios{
     display: flex;
@@ -152,3 +175,5 @@ h4{
         }
     }
 }
+=======
+>>>>>>> back
