@@ -62,12 +62,13 @@ p{
         grid-column: 1/2;
         h1{
             @include Texto (3rem 4rem 0rem 4rem);
+            font-size: 8rem;
         }
     }
     .DescripcionNosotrosIndex{
         grid-column: 2/3;
         p{
-            @include Texto (2rem 3rem);
+            @include Texto (2rem 3rem 2rem 0rem);
             color: $ColorSecundario
         }
     }
