@@ -19,11 +19,22 @@
  
 /*General*/
 body{
-    background-image: url(../imgs/fondofondo.jpg)
+    background-image: url(../imgs/fondofondo.jpg);
 }
 h1{
-    @include h1 (bolder);
+    @include Titulos (bolder);
     margin: 2rem
+}
+h2{
+    @include Titulos (regular);
+    color: $ColorSecundario;
+    text-align: center
+}
+h4{
+    @include Texto (1rem 0rem);
+    font-size: 1rem;
+    font-weight: 100;
+    color: $ColorSecundario
 }
 p{
     @include Texto (1rem 3rem);
@@ -42,7 +53,7 @@ p{
         .TextoNosotrosIndex{
             grid-column: 1/3;}
             h1{
-                @include h1 (bolder);
+                @include Titulos (bolder);
                 margin: 2rem
             }
         }
@@ -61,7 +72,7 @@ p{
     .TextoNosotrosIndex{
         grid-column: 1/2;
         h1{
-            @include h1 (3rem 4rem 0rem 4rem);
+            @include Titulos (3rem 4rem 0rem 4rem);
             font-size: 3rem;
         }
     }
@@ -85,8 +96,8 @@ p{
     .TextoNosotrosIndex{
         grid-column: 1/2;
         h1{
-            @include h1 (bolder);
-            margin: 2rem
+            @include Titulos (bolder);
+            margin: 2rem 1rem
         }
     }
     .DescripcionNosotrosIndex{
@@ -155,11 +166,44 @@ p{
 /* Servicios*/
 .MainServicios{
     display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+    
     .Card{
-        background-color: aqua;
+        flex-wrap: wrap;
+        width: 20%;
         border: 3px solid $ColorSecundario;
+        margin: 2rem;
+        border-radius: 0.5rem;
+        
+        h2{
+            @extend %Texto;
+                color: $ColorSecundario;
+                margin: 1rem;
+                height: 7rem;
+        }
         img{
-            width:30%;
+            width:100%;
+            margin-bottom: 2rem;
+        }
+        aside{
+           text-align: center;
+           margin:1rem 1rem 2rem 1rem;
+           color: $ColorSecundario;
+        }
+        .BotonServicios{
+           text-align: center;
         }
     }
+}
+
+.BotonServicios{
+justify-content: center;
+}
+
+
+.Card:hover{
+    background-color: $ColorTerciario;
+    transform: scale(1.05);
 }

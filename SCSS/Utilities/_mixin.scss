@@ -6,14 +6,13 @@
 }
 //  Texto//
 
-@mixin h1 ($font-weight){
+@mixin Titulos ($font-weight){
     text-align: center;
-    font-family: {
-        src: url(../fuentes/ChineseRocksFreeRegular.ttf);
-    };
+    font-family: url(../fuentes/ChineseRocksFreeRegular.ttf);
     font-weight: $font-weight;
     color: $ColorSecundario;
-}
+};
+
 
 @mixin Texto ($rem){
     text-align: center;

@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center; }
 
-.ContenedorGaleria div h2, .ContenedorGaleria div h3, .ContenedorGaleria .ContenedorImagenes .card h2, .ContenedorGaleria .ContenedorImagenes .card h3 {
+.ContenedorGaleria div h2, .ContenedorGaleria div h3, .ContenedorGaleria .ContenedorImagenes .card h2, .ContenedorGaleria .ContenedorImagenes .card h3, .MainServicios .Card h2 {
   text-align: center;
   font-family: 'Nunito', sans-serif; }
 
@@ -29,6 +29,23 @@ h1 {
   font-weight: bolder;
   color: #ffffff;
   margin: 2rem; }
+
+h2 {
+  text-align: center;
+  font-family: url(../fuentes/ChineseRocksFreeRegular.ttf);
+  font-weight: regular;
+  color: #ffffff;
+  color: #ffffff;
+  text-align: center; }
+
+h4 {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: regular;
+  margin: 1rem 0rem;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #ffffff; }
 
 p {
   text-align: center;
@@ -97,7 +114,7 @@ p {
         font-family: url(../fuentes/ChineseRocksFreeRegular.ttf);
         font-weight: bolder;
         color: #ffffff;
-        margin: 2rem; }
+        margin: 2rem 1rem; }
     .MainIndex .DescripcionNosotrosIndex {
       grid-column: 2/3; }
       .MainIndex .DescripcionNosotrosIndex p {
@@ -143,9 +160,33 @@ p {
 
 /* Servicios*/
 .MainServicios {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  justify-content: center; }
   .MainServicios .Card {
-    background-color: aqua;
-    border: 3px solid #ffffff; }
+    flex-wrap: wrap;
+    width: 20%;
+    border: 3px solid #ffffff;
+    margin: 2rem;
+    border-radius: 0.5rem; }
+    .MainServicios .Card h2 {
+      color: #ffffff;
+      margin: 1rem;
+      height: 7rem; }
     .MainServicios .Card img {
-      width: 30%; }
+      width: 100%;
+      margin-bottom: 2rem; }
+    .MainServicios .Card aside {
+      text-align: center;
+      margin: 1rem 1rem 2rem 1rem;
+      color: #ffffff; }
+    .MainServicios .Card .BotonServicios {
+      text-align: center; }
+
+.BotonServicios {
+  justify-content: center; }
+
+.Card:hover {
+  background-color: #7b3bf3;
+  transform: scale(1.05); }
