@@ -32,9 +32,11 @@ h3{
 
 h4{
     @include Texto (1rem 0rem);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 100;
-    color: $ColorSecundario
+    color: $ColorSecundario;
+    margin: 2rem
+
 }
 p{
     @include Texto (1rem 3rem);
@@ -60,6 +62,9 @@ p{
         }
         .DescripcionNosotrosIndex{
             grid-column: 1/3;
+            p{
+                font-size: 1rem;
+            }
 }
  
  @include Media (md){
@@ -276,18 +281,23 @@ justify-content: center;
     transform: scale(1.05);
 }
 .BotonFlotante{
-    margin: 5rem 0rem 0rem 5rem;
+    margin: 5rem 0rem 0rem 3.5rem;
+
+    @include Media (md){
+    display:none;
+    }
 
 }
 
 .BotonHome{
     color: $ColorTerciario;
     text-decoration: none;
-    text-align: center;
-
+    margin-left: 1rem;
+    
     @include Media (md){
     color: $ColorTerciario;
     text-decoration: none;
-    margin-left: 2rem;
+    text-align: center;
+    align-items: center;
 }
 }
