@@ -25,3 +25,9 @@
     display: grid;
     grid-template-columns: repeat($columns,1fr);
 }
+
+@mixin ImgNovedades {
+    width: 70%;
+    margin: 1rem 5rem;
+    border-radius: 0.5rem;
+}
