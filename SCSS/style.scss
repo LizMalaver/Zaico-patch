@@ -283,21 +283,14 @@ justify-content: center;
 .BotonFlotante{
     margin: 5rem 0rem 0rem 3.5rem;
 
-    @include Media (md){
-    display:none;
-    }
 
 }
 
 .BotonHome{
     color: $ColorTerciario;
     text-decoration: none;
-    margin-left: 1rem;
-    
-    @include Media (md){
-    color: $ColorTerciario;
-    text-decoration: none;
     text-align: center;
     align-items: center;
-}
+    margin-top: 2rem;
+
 }

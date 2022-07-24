@@ -254,17 +254,10 @@ p {
 
 .BotonFlotante {
   margin: 5rem 0rem 0rem 3.5rem; }
-  @media screen and (min-width: 768px) {
-    .BotonFlotante {
-      display: none; } }
 
 .BotonHome {
   color: #7b3bf3;
   text-decoration: none;
-  margin-left: 1rem; }
-  @media screen and (min-width: 768px) {
-    .BotonHome {
-      color: #7b3bf3;
-      text-decoration: none;
-      text-align: center;
-      align-items: center; } }
+  text-align: center;
+  align-items: center;
+  margin-top: 2rem; }
