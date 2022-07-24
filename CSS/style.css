@@ -204,14 +204,16 @@ p {
 /* Servicios*/
 .MainServicios {
   flex-wrap: wrap;
-  row-gap: 2rem; }
+  row-gap: 2rem;
+  text-decoration: none; }
   .MainServicios .Card {
     width: 20rem;
     height: 34rem; }
     .MainServicios .Card h2 {
       color: #ffffff;
       margin: 1rem;
-      height: 7rem; }
+      height: 7rem;
+      text-align: center; }
     .MainServicios .Card img {
       width: 100%;
       margin-bottom: 2rem; }
@@ -223,12 +225,12 @@ p {
       display: flex;
       justify-content: center;
       padding: 1rem;
-      background-color: #7b3bf3;
+      background-color: #ffffff;
+      text-decoration: none;
       width: 20rem;
-      border-radius: 0.5rem;
-      color: #000000; }
-    .MainServicios .Card .BotonServicios:visited {
-      color: #000000; }
+      border-radius: 0.5rem; }
+    .MainServicios .Card .BotonServicios:hover {
+      color: #7b3bf3; }
 
 /*Contacto*/
 .Portada img {
