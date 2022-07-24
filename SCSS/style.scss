@@ -25,6 +25,10 @@ h1{
     @include Titulos (bolder);
     margin: 2rem
 }
+h3{
+    @include Texto (1rem 0rem);
+    font-weight: lighter
+}
 
 h4{
     @include Texto (1rem 0rem);
@@ -123,7 +127,6 @@ p{
  .MainNovedades{
     @include Grid (3,1fr);
    
-
     .PortadaNovedades{
         grid-column: 1/4{
         }
@@ -157,7 +160,6 @@ p{
 }  
 }
 } 
- 
  
 /* Beanies*/
 .ContenedorGaleria{
@@ -209,16 +211,17 @@ p{
         }
     }
 
- 
 /* Servicios*/
 .MainServicios{
     @extend %DisplayFlex;
     flex-wrap: wrap;
+    row-gap: 2rem;
     
     .Card{
         @extend %Card;
         width: 20rem;
         height: 34rem;
+        
         h2{
             @extend %Texto;
                 color: $ColorSecundario;
@@ -235,8 +238,16 @@ p{
            color: $ColorSecundario;
         }
         .BotonServicios{
-           text-align: center;
-           display: block;
+           display: flex;
+           justify-content: center;
+           padding: 1rem;
+           background-color: $ColorTerciario;
+           width: 20rem;
+           border-radius: 0.5rem;
+           color: $ColorPrincipal;
+        }
+        .BotonServicios:visited{
+            color: $ColorPrincipal;
         }
     }
 }
@@ -248,21 +259,16 @@ p{
     }
 }
 
-
 .BotonServicios{
 justify-content: center;
 }
-
-
 .Card:hover{
     background-color: $ColorTerciario;
     transform: scale(1.05);
 }
-
 .Parche:hover{
     transform: scale(1.05);
 }
-
 .Beanies:hover{
     transform: scale(1.05);
 }

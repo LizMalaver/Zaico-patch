@@ -35,6 +35,13 @@ h1 {
   color: #ffffff;
   margin: 2rem; }
 
+h3 {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: regular;
+  margin: 1rem 0rem;
+  font-weight: lighter; }
+
 h4 {
   text-align: center;
   font-family: 'Nunito', sans-serif;
@@ -196,7 +203,8 @@ p {
 
 /* Servicios*/
 .MainServicios {
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  row-gap: 2rem; }
   .MainServicios .Card {
     width: 20rem;
     height: 34rem; }
@@ -212,8 +220,15 @@ p {
       margin: 0rem 1rem 2rem 1rem;
       color: #ffffff; }
     .MainServicios .Card .BotonServicios {
-      text-align: center;
-      display: block; }
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background-color: #7b3bf3;
+      width: 20rem;
+      border-radius: 0.5rem;
+      color: #000000; }
+    .MainServicios .Card .BotonServicios:visited {
+      color: #000000; }
 
 /*Contacto*/
 .Portada img {
