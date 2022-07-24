@@ -200,9 +200,13 @@ p{
 /* Beanies*/
 .ContenedorGaleria{
     @extend %DisplayFlex;
-    width: 100% ;
-    min-height: 100vh ;
-    div{
+    margin: 0rem 3rem;
+    text-align: center;
+    .Beanies{
+        @extend %Card;
+        height: 34rem;
+        width: 27rem;
+        text-align: center;
         img{
             @include ImagenGaleria (100%, auto)
         }
@@ -216,20 +220,18 @@ p{
             color: $ColorTerciario;
         }
     }
-         
-        }
+}
  
 /* Parches*/
-.ContenedorGaleria{
-    @extend %DisplayFlex;
-    width: 100% ;
-    min-height: 100vh ;
     .ContenedorImagenes{
         @extend %DisplayFlex;
+        margin: 0rem 3rem;
         text-align: center;
-        .card{
-            flex: 1;
-            margin: 20px 20px;
+        .Parche{
+            @extend %Card;
+            height: 34rem;
+            width: 27rem;
+            text-align: center;
             img{
                 @include ImagenGaleria (100%, auto)
             }
@@ -244,22 +246,16 @@ p{
             }
         }
     }
-}  
+
  
 /* Servicios*/
 .MainServicios{
-    display: flex;
+    @extend %DisplayFlex;
     flex-wrap: wrap;
-    width: 100vw;
-    justify-content: center;
     
     .Card{
-        flex-wrap: wrap;
+        @extend %Card;
         width: 20%;
-        border: 3px solid $ColorSecundario;
-        margin: 2rem;
-        border-radius: 0.5rem;
-        
         h2{
             @extend %Texto;
                 color: $ColorSecundario;
@@ -288,5 +284,13 @@ justify-content: center;
 
 .Card:hover{
     background-color: $ColorTerciario;
+    transform: scale(1.05);
+}
+
+.Parche:hover{
+    transform: scale(1.05);
+}
+
+.Beanies:hover{
     transform: scale(1.05);
 }

@@ -1,7 +1,7 @@
 %DisplayFlex{
     display: flex ;
+    flex-wrap: wrap;
     height: auto;
-    width: 100%;
     justify-content: center ;
     align-items: center ;
 } 
@@ -14,8 +14,8 @@
 
 
 %Card{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100px;
+    border: 3px solid $ColorSecundario;
+    margin: 2rem;
+    border-radius: 0.5rem;
     
 }

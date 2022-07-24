@@ -8,16 +8,21 @@
   font-family: chinese-rocks-free-regular;
   src: url(../fuentes/ChineseRocksFreeRegular.ttf); }
 
-.ContenedorGaleria, .ContenedorGaleria .ContenedorImagenes {
+.ContenedorGaleria, .ContenedorImagenes, .MainServicios {
   display: flex;
+  flex-wrap: wrap;
   height: auto;
-  width: 100%;
   justify-content: center;
   align-items: center; }
 
-.ContenedorGaleria div h2, .ContenedorGaleria div h3, .ContenedorGaleria .ContenedorImagenes .card h2, .ContenedorGaleria .ContenedorImagenes .card h3, .MainServicios .Card h2 {
+.ContenedorGaleria .Beanies h2, .ContenedorGaleria .Beanies h3, .ContenedorImagenes .Parche h2, .ContenedorImagenes .Parche h3, .MainServicios .Card h2 {
   text-align: center;
   font-family: 'Nunito', sans-serif; }
+
+.ContenedorGaleria .Beanies, .ContenedorImagenes .Parche, .MainServicios .Card {
+  border: 3px solid #ffffff;
+  margin: 2rem;
+  border-radius: 0.5rem; }
 
 /*General*/
 body {
@@ -185,49 +190,43 @@ p {
 
 /* Beanies*/
 .ContenedorGaleria {
-  width: 100%;
-  min-height: 100vh; }
-  .ContenedorGaleria div img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem; }
-  .ContenedorGaleria div h2 {
-    color: #ffffff;
-    margin: 1rem; }
-  .ContenedorGaleria div h3 {
-    color: #7b3bf3; }
+  margin: 0rem 3rem;
+  text-align: center; }
+  .ContenedorGaleria .Beanies {
+    height: 34rem;
+    width: 27rem;
+    text-align: center; }
+    .ContenedorGaleria .Beanies img {
+      width: 100%;
+      height: auto; }
+    .ContenedorGaleria .Beanies h2 {
+      color: #ffffff;
+      margin: 1rem; }
+    .ContenedorGaleria .Beanies h3 {
+      color: #7b3bf3; }
 
 /* Parches*/
-.ContenedorGaleria {
-  width: 100%;
-  min-height: 100vh; }
-  .ContenedorGaleria .ContenedorImagenes {
+.ContenedorImagenes {
+  margin: 0rem 3rem;
+  text-align: center; }
+  .ContenedorImagenes .Parche {
+    height: 34rem;
+    width: 27rem;
     text-align: center; }
-    .ContenedorGaleria .ContenedorImagenes .card {
-      flex: 1;
-      margin: 20px 20px; }
-      .ContenedorGaleria .ContenedorImagenes .card img {
-        width: 100%;
-        height: auto;
-        border-radius: 1rem; }
-      .ContenedorGaleria .ContenedorImagenes .card h2 {
-        color: #ffffff;
-        margin: 1rem; }
-      .ContenedorGaleria .ContenedorImagenes .card h3 {
-        color: #7b3bf3; }
+    .ContenedorImagenes .Parche img {
+      width: 100%;
+      height: auto; }
+    .ContenedorImagenes .Parche h2 {
+      color: #ffffff;
+      margin: 1rem; }
+    .ContenedorImagenes .Parche h3 {
+      color: #7b3bf3; }
 
 /* Servicios*/
 .MainServicios {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  justify-content: center; }
+  flex-wrap: wrap; }
   .MainServicios .Card {
-    flex-wrap: wrap;
-    width: 20%;
-    border: 3px solid #ffffff;
-    margin: 2rem;
-    border-radius: 0.5rem; }
+    width: 20%; }
     .MainServicios .Card h2 {
       color: #ffffff;
       margin: 1rem;
@@ -247,4 +246,10 @@ p {
 
 .Card:hover {
   background-color: #7b3bf3;
+  transform: scale(1.05); }
+
+.Parche:hover {
+  transform: scale(1.05); }
+
+.Beanies:hover {
   transform: scale(1.05); }
