@@ -275,3 +275,19 @@ justify-content: center;
 .Beanies:hover{
     transform: scale(1.05);
 }
+.BotonFlotante{
+    margin: 5rem 0rem 0rem 5rem;
+
+}
+
+.BotonHome{
+    color: $ColorTerciario;
+    text-decoration: none;
+    text-align: center;
+
+    @include Media (md){
+    color: $ColorTerciario;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+}

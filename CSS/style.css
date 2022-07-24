@@ -248,3 +248,16 @@ p {
 
 .Beanies:hover {
   transform: scale(1.05); }
+
+.BotonFlotante {
+  margin: 5rem 0rem 0rem 5rem; }
+
+.BotonHome {
+  color: #7b3bf3;
+  text-decoration: none;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .BotonHome {
+      color: #7b3bf3;
+      text-decoration: none;
+      margin-left: 2rem; } }
