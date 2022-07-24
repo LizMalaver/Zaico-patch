@@ -124,25 +124,34 @@ p {
     justify-content: center; }
 
 .Novedades1 {
-  grid-column: 1/4; }
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center; }
   .Novedades1 img {
-    width: 70%;
-    align-items: center;
-    border-radius: 0.5rem; }
+    width: 50%;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: center; }
 
 .Novedades2 {
-  grid-column: 1/4; }
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center; }
   .Novedades2 img {
-    width: 70%;
-    align-items: center;
-    border-radius: 0.5rem; }
+    width: 50%;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: center; }
 
 .Novedades3 {
-  grid-column: 1/4; }
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center; }
   .Novedades3 img {
-    width: 70%;
-    align-items: center;
-    border-radius: 0.5rem; }
+    width: 50%;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    text-align: center; }
 
 @media screen and (min-width: 768px) {
   .MainNovedades {
@@ -157,17 +166,17 @@ p {
     .MainNovedades .Novedades1 {
       grid-column: 1/2; }
       .MainNovedades .Novedades1 img {
-        width: 90%;
+        width: 60%;
         margin: 1rem; }
     .MainNovedades .Novedades2 {
       grid-column: 2/3; }
       .MainNovedades .Novedades2 img {
-        width: 90%;
+        width: 60%;
         margin: 1rem; }
     .MainNovedades .Novedades3 {
       grid-column: 3/4; }
       .MainNovedades .Novedades3 img {
-        width: 90%;
+        width: 60%;
         margin: 1rem; } }
 
 /* Beanies*/
